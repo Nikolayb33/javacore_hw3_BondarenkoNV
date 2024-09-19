@@ -12,7 +12,7 @@ public class Employee {
     int Day;
     int Month;
     int Year;
-    static int salary;
+    int salary;
 
 
 
@@ -52,7 +52,7 @@ public class Employee {
         this.Year = year;
     }
 
-    static int getSalary() {
+    public int getSalary() {
         return salary;
     }
 
@@ -94,10 +94,10 @@ public class Employee {
     повышение зарплаты
      */
 
-    static int increaseSalary(int persent){
+    static int increaseSalary(int salary, int persent){
         int salary_before_increase ;
         int salary_after_increase;
-        salary_before_increase = getSalary();
+        salary_before_increase = salary;
         salary_after_increase = salary_before_increase * persent;
         return salary_after_increase;
     }

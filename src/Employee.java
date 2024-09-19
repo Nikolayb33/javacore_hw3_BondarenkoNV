@@ -8,22 +8,26 @@
 
 public class Employee {
 
-    // constant
+    // поля
     int Day;
     int Month;
     int Year;
-    int money;
+    static int salary;
+
+
 
 
     // конструктор
-    public Employee(int day, int month, int year, int money) {
+    public Employee(int day, int month, int year, int salary) {
         this.Day = day;
         this.Month = month;
         this.Year = year;
+        this.salary = salary;
     }
 
-    // getter setter
-
+    /*
+    геттеры и сеттеры
+     */
     public int getDay() {
         return Day;
     }
@@ -48,7 +52,17 @@ public class Employee {
         this.Year = year;
     }
 
+    static int getSalary() {
+        return salary;
+    }
 
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    /*
+    сравнение даты рождения
+     */
     public int compareTo(Employee b) {
         if (this.getYear() > b.getYear()) {
             return -1;
@@ -75,6 +89,18 @@ public class Employee {
         return 0;
     }
 
+
+    /*
+    повышение зарплаты
+     */
+
+    static int increaseSalary(int persent){
+        int salary_before_increase ;
+        int salary_after_increase;
+        salary_before_increase = getSalary();
+        salary_after_increase = salary_before_increase * persent;
+        return salary_after_increase;
+    }
 
 }
 

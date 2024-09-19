@@ -2,6 +2,23 @@
 
 public class Chief extends Employee{
 
+    static int rang = 1;
+
+
+    public Chief(int day, int month, int year, int salary) {
+        super(day, month, year, salary);
+    }
+
+     @Override
+    public int getSalary() {
+        return super.getSalary();
+    }
+
+    @Override
+    public void setSalary(int salary) {
+        super.setSalary(salary);
+    }
+
     @Override
     public int compareTo(Employee b) {
         // TODO Auto-generated method stub

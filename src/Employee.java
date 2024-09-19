@@ -13,6 +13,7 @@ public class Employee {
     int Month;
     int Year;
     int salary;
+    static int rang = 0;
 
 
 
@@ -95,11 +96,16 @@ public class Employee {
      */
 
     static int increaseSalary(int salary, int persent){
-        int salary_before_increase ;
-        int salary_after_increase;
-        salary_before_increase = salary;
-        salary_after_increase = salary_before_increase * persent;
-        return salary_after_increase;
+        if (rang == 0) {
+            int salary_before_increase ;
+            int salary_after_increase;
+            salary_before_increase = salary;
+            salary_after_increase = salary_before_increase * persent;
+            return salary_after_increase;
+        }
+        else {
+            return salary;
+        }
     }
 
 }

@@ -6,12 +6,12 @@ public class Main {
         /*
         работники
          */
-        Employee e1 = new Employee(12, 06, 1991, 30000);
-        Employee e2 = new Employee(11, 06, 1991, 50000);
+        Employee e1 = new Employee(12, 6, 1991, 30000);
+        Employee e2 = new Employee(11, 6, 1991, 50000);
         /*
         шэф
          */
-        Chief с1 = new Chief(14, 06, 1991, 70000);
+        Chief с1 = new Chief(14, 6, 1991, 70000);
 
         /*
         проверка первого задания
@@ -30,10 +30,9 @@ public class Main {
         проверка второго задания
          */
 
-        System.out.println(Employee.increaseSalary(e1.getSalary(), 15));
-        System.out.println(Employee.increaseSalary(e2.getSalary(), 15));
+        System.out.println(Employee.increaseSalary(e1.getSalary()));
+        System.out.println(Employee.increaseSalary(e2.getSalary()));
 
-//        Chief.increaseSalary(c1.getSalary(), 15);
 
 
     }

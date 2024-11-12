@@ -33,7 +33,7 @@ public class Main {
         System.out.println(Employee.increaseSalary(e1.getSalary(), 15));
         System.out.println(Employee.increaseSalary(e2.getSalary(), 15));
 
-//        Chief.increaseSalary(c1.getSalary(), 15);
+        Chief.increaseSalary(c1.getSalary(), 15);
 
 
     }

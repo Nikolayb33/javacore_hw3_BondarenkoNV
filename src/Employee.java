@@ -95,12 +95,12 @@ public class Employee {
     повышение зарплаты
      */
 
-    static int increaseSalary(int salary, int persent){
+    static int increaseSalary(int salary){
         if (rang == 0) {
-            int salary_before_increase ;
+            int salary_before_increase;
             int salary_after_increase;
             salary_before_increase = salary;
-            salary_after_increase = salary_before_increase * persent;
+            salary_after_increase = salary_before_increase * 15; // увеличить зарплату на 15 %
             return salary_after_increase;
         }
         else {

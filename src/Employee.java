@@ -95,7 +95,7 @@ public class Employee {
     повышение зарплаты
      */
 
-    static int increaseSalary(int salary){
+    public static int increaseSalary(int salary){
         if (rang == 0) {
             int salary_before_increase;
             int salary_after_increase;

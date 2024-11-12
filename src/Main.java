@@ -11,7 +11,7 @@ public class Main {
         /*
         шэф
          */
-        Chief с1 = new Chief(14, 6, 1991, 70000);
+        Chief c1 = new Chief(14, 6, 1991, 70000);
 
         /*
         проверка первого задания
@@ -32,11 +32,9 @@ public class Main {
 
         System.out.println(Employee.increaseSalary(e1.getSalary()));
         System.out.println(Employee.increaseSalary(e2.getSalary()));
+        System.out.println(Chief.increaseSalary(c1.getSalary()));
 
-<<<<<<< HEAD
-        Chief.increaseSalary(c1.getSalary(), 15);
-=======
->>>>>>> d26d0c63c6e79307843f4711800b1f69e6b5db36
+
 
 
     }
